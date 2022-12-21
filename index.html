@@ -47,7 +47,7 @@
         <section class="hero ">
             <div class="conteiner ">
                 <h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section examples">
@@ -84,11 +84,29 @@
             <div class="conteiner">
                 <h2 class="employment-title">Чим ми займаємося</h2>
                 <ul class="list-offer">
-                    <li class="item"><img src="./imeges/img1.jpg" alt="Людина пише код" width="370" height="294"></li>
-                    <li class="item"><img src="./imeges/img2.jpg" alt="Людина вибирає макет" width="370" height="294">
+                    <li class="item">
+                        <div class="offer-div">
+                            <img class="img-offer" src="./imeges/img1.jpg" alt="Людина пише код" width="370" height="294">
+                            <p class="div-text">
+                                Десктопні додатки
+                            </p>
+                        </div>
                     </li>
-                    <li class="item"><img src="./imeges/img3.jpg" alt="Людина на планшеті вибирає кольор з кольорової гами" width="370"
-                            height="294">
+                    <li class="item">
+                        <div class="offer-div">
+                            <img class="img-offer" src="./imeges/img2.jpg" alt="Людина пише код" width="370" height="294">
+                            <p class="div-text">
+                                Мобільні додатки
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="offer-div">
+                            <img class="img-offer" src="./imeges/img3.jpg" alt="Людина пише код" width="370" height="294">
+                            <p class="div-text">
+                                Дизайнерські рішення
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -311,6 +329,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <buttom class="modal-buttom" type="buttom" data-modal-close>
+            <svg class="icon-close-back" width="16" height="16">
+                <use href="./imeges/icon-close-black.svg"></use>
+            </svg>
+            </buttom>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
